@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
 
-@interface ViewController : UIViewController
-
-
+@interface ViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UITableViewDataSource, UITableViewDelegate>
+{
+    NSArray *tcellname,*ccellname;
+}
+@property(nonatomic) long i;
+@property(strong,nonatomic) UICollectionView *collect;
+@property(strong,nonatomic) UILabel *lbl;
+@property(strong,nonatomic) UILabel *lbltable;
 @end
 
